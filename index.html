@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Score Keeper - Ejercicio del curso de Colt de Udemy</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-half is-offset-quarter">
+                    <div class="card has-background-dark">
+                 
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="https://4.bp.blogspot.com/-QSFAXcAp-t0/WmqhWwKJ8SI/AAAAAAAH-Tc/OcaRcBVmNdEG8XwisvR8ovXcvZ6_9WK2gCLcBGAs/s1600/Ping-Pong-Download-PNG.png">
+                            </figure>
+                           
+                            </div>
+                            <header class="card-header">
+                            <p class="card-header-title has-text-light title is-2">Score Keeper</p>
+                        </header>
+                        <div class="card-content">
+                            <div class="content has-text-light">
+                                <h1 class="has-text-light">
+                                    <span id="p1Score" class="title is-1 has-text-light">0</span>
+                                    a
+                                    <span id="p2Score" class="title is-1 has-text-light">0</span>
+                                </h1>
+                                <label for="maxWin" class="label is-inline is-medium has-text-light">Puntaje límite:</label>
+                                <div class="select is-rounded">
+                                    <select id="maxWin">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option selected="selected">3</option>
+                                        <option>4</option>
+                                    </select>
+                                </div>
+                                <span id="theWinnerIs"></span>
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            <button id="p1Button" class="card-footer-item button is-success">+1 Jugador 1</button>
+                            <button id="p2Button" class="card-footer-item button is-danger">+1 Jugador 2</button>
+                            <button id="resetButton" class="card-footer-item button is-info">Reiniciar</button>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript" src="js/script.js"></script>
+</html>
